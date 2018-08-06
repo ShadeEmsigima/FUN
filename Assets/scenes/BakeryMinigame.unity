@@ -540,7 +540,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh18844
+  m_Name: pb_Mesh10290
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1212,7 +1212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010864150500, guid: 07c1ce2b91eb18f4c83d7d36268a0341, type: 2}
       propertyPath: m_TagString
-      value: Bull
+      value: Stick
       objectReference: {fileID: 0}
     - target: {fileID: 4000010663249712, guid: 07c1ce2b91eb18f4c83d7d36268a0341, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3570,8 +3570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disc: {fileID: 1280541626}
-  discRotationSpeed: 0
-  spawnedCustomers: []
+  score: 0
+  spawnedCustomers: 0
   customerTypes:
   - {fileID: 1051725506}
   - {fileID: 519868534}
@@ -13903,7 +13903,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012087637210, guid: cc3c5a058e6bb634781860012b9aa683, type: 2}
       propertyPath: m_TagString
-      value: Bull
+      value: Mo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc3c5a058e6bb634781860012b9aa683, type: 2}
@@ -18633,6 +18633,7 @@ GameObject:
   - component: {fileID: 519868537}
   - component: {fileID: 519868536}
   - component: {fileID: 519868535}
+  - component: {fileID: 519868539}
   m_Layer: 0
   m_Name: Cross
   m_TagString: CCross
@@ -18708,6 +18709,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519868539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519868534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ace34a8a986c40a949b2bb5a627ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 130667110}
+  myOrder: Cross
 --- !u!1001 &520420068
 Prefab:
   m_ObjectHideFlags: 0
@@ -39146,7 +39160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011379175792, guid: 931dfc52fd271a846b05a6bf70694fca, type: 2}
       propertyPath: m_TagString
-      value: Bull
+      value: Do
       objectReference: {fileID: 0}
     - target: {fileID: 4000010100078426, guid: 931dfc52fd271a846b05a6bf70694fca, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -44789,6 +44803,7 @@ GameObject:
   - component: {fileID: 1051725509}
   - component: {fileID: 1051725507}
   - component: {fileID: 1051725508}
+  - component: {fileID: 1051725511}
   m_Layer: 0
   m_Name: Stick
   m_TagString: CStick
@@ -44864,6 +44879,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051725511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051725506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ace34a8a986c40a949b2bb5a627ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 130667110}
+  myOrder: Stick
 --- !u!1 &1051771247
 GameObject:
   m_ObjectHideFlags: 0
@@ -65560,7 +65588,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011100452964, guid: 94d292219d961b445b269659a3994172, type: 2}
       propertyPath: m_TagString
-      value: Bull
+      value: Cross
       objectReference: {fileID: 0}
     - target: {fileID: 4000014199351478, guid: 94d292219d961b445b269659a3994172, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -71897,6 +71925,7 @@ GameObject:
   - component: {fileID: 1532014279}
   - component: {fileID: 1532014278}
   - component: {fileID: 1532014277}
+  - component: {fileID: 1532014281}
   m_Layer: 0
   m_Name: Mo
   m_TagString: CMo
@@ -71972,6 +72001,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1532014281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532014276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ace34a8a986c40a949b2bb5a627ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 130667110}
+  myOrder: Mo
 --- !u!1001 &1542956116
 Prefab:
   m_ObjectHideFlags: 0
@@ -76247,6 +76289,7 @@ GameObject:
   - component: {fileID: 1587024825}
   - component: {fileID: 1587024824}
   - component: {fileID: 1587024823}
+  - component: {fileID: 1587024827}
   m_Layer: 0
   m_Name: Do
   m_TagString: CDo
@@ -76322,6 +76365,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587024827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1587024822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ace34a8a986c40a949b2bb5a627ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 130667110}
+  myOrder: Do
 --- !u!1 &1587599629
 GameObject:
   m_ObjectHideFlags: 0
@@ -78949,7 +79005,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011003416750, guid: 78dec3a2e9e50fc46882f9cc3751f692, type: 2}
       propertyPath: m_TagString
-      value: Bull
+      value: Muf
       objectReference: {fileID: 0}
     - target: {fileID: 4000012609690100, guid: 78dec3a2e9e50fc46882f9cc3751f692, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -98447,6 +98503,7 @@ GameObject:
   - component: {fileID: 2116138313}
   - component: {fileID: 2116138312}
   - component: {fileID: 2116138311}
+  - component: {fileID: 2116138315}
   m_Layer: 0
   m_Name: Muf
   m_TagString: Muf
@@ -98522,6 +98579,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2116138315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116138310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ace34a8a986c40a949b2bb5a627ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 130667110}
+  myOrder: Muf
 --- !u!1 &2119047300
 GameObject:
   m_ObjectHideFlags: 0
@@ -99498,6 +99568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129977491}
   - component: {fileID: 2129977490}
+  - component: {fileID: 2129977492}
   m_Layer: 0
   m_Name: ScoreManager
   m_TagString: Untagged
@@ -99511,7 +99582,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2129977489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cedc0c1f5a6db5748b62de21b320f455, type: 3}
   m_Name: 
@@ -99529,6 +99600,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129977492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2129977489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a4d54d4effa9349ab0fe7c624174f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2133118572
 GameObject:
   m_ObjectHideFlags: 0

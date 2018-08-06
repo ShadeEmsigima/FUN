@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class CustomerScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject target;
+    public string myOrder;
+
+    private void Start()
+    {
+        target.GetComponent<SpawnerScript>(); 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == myOrder) {
+            Destroy(gameObject);
+            target.GetComponent<SpawnerScript>().spawnedCustomers--;
+            target.GetComponent<SpawnerScript>().score++; //SpawnerScript.score += 1;
+            Debug.Log("You succesfully delivered the order! Your score is " + target.GetComponent<SpawnerScript>().score);
+        }
+    }
 }
