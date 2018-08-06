@@ -5,6 +5,24 @@ TagManager:
   serializedVersion: 2
   tags:
   - water
+  - Food
+  - Bed
+  - Sittable
+  - Player1
+  - Stick
+  - Cross
+  - Muf
+  - Do
+  - Mo
+  - spots
+  - CStick
+  - CCross
+  - CDo
+  - CMo
+  - CMuf
+  - Bull
+  - ground
+  - Customer
   layers:
   - Default
   - TransparentFX
@@ -14,8 +32,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Uppickable
+  - Bullets n Targets
   - 
   - 
   - 

@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/scenes/CityScene.unity
+    guid: 152b3e8dabefbea43ba26b37671337ef
+  - enabled: 1
+    path: Assets/scenes/IslandScene.unity
+    guid: e3bbbbd1ee74c19448e4a05e602e7c64
+  - enabled: 1
+    path: Assets/scenes/BakeryMinigame.unity
+    guid: 21f6d7183b1f844488bef1c397890f29
