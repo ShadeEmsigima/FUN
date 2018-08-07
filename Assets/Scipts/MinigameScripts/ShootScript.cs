@@ -22,6 +22,7 @@ public class ShootScript : MonoBehaviour {
     public GameObject bulletMuf;
     public GameObject bulletDo;
     public GameObject bulletMo;
+    public int foodWasted;
     public Camera fpsCam;
     public static float range = 100f;
     public float impactForce;
@@ -29,7 +30,7 @@ public class ShootScript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        
+        foodWasted = 0;
     }
 
 	// Update is called once per frame
@@ -84,6 +85,7 @@ public class ShootScript : MonoBehaviour {
             rb = bullet.GetComponent<Rigidbody>();
             rb.AddForce(fpsCam.transform.forward * impactForce);
             Destroy(bullet, 3f);
+            foodWasted += 1;
         }
     }
 

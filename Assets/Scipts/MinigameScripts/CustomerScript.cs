@@ -16,6 +16,7 @@ public class CustomerScript : MonoBehaviour {
     {
         if (collision.gameObject.tag == myOrder) {
             Destroy(gameObject);
+            Destroy(collision.gameObject);
             target.GetComponent<SpawnerScript>().spawnedCustomers--;
             target.GetComponent<SpawnerScript>().score++; //SpawnerScript.score += 1;
             Debug.Log("You succesfully delivered the order! Your score is " + target.GetComponent<SpawnerScript>().score);
